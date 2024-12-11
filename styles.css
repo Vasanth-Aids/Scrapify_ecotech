@@ -1,0 +1,359 @@
+:root {
+    --primary-color: #1e1344;
+    --secondary-color: #3498db;
+    --text-color: #ffffff;
+    --accent-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(30, 19, 68, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+main {
+    padding-top: 4rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-welcome {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.hero-company {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.hero-tagline {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.logo-container {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 4rem;
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.logo-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--secondary-color);
+    filter: blur(1rem);
+    opacity: 0.5;
+    border-radius: 1rem;
+}
+
+.hero-icons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-circle {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.icon-circle svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--text-color);
+}
+
+.products, .company, .career, .about, .contact {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .product {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.product:nth-child(even) {
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+    .product:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+.product-content, .product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel', serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.btn-outline {
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.company-content, .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .company-content, .about-content {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.company-image, .about-image {
+    flex: 1;
+}
+
+.company-info, .about-info {
+    flex: 2;
+}
+
+.company-location, .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.career-domains {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.domain {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.domain-icon {
+    width: 6rem;
+    height: 6rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.domain-icon svg {
+    width: 3rem;
+    height: 3rem;
+    color: var(--secondary-color);
+}
+
+.btn-large {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.about-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contact-header h2 {
+    font-size: 3rem;
+}
+
+.contact-header h3 {
+    font-size: 3.5rem;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-details {
+    margin-top: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--secondary-color);
+}
+
+.social-link svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--text-color);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
