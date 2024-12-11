@@ -63,8 +63,9 @@ main {
 }
 
 .hero-company {
+    font-family:'Cinzel', serif;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.1em;
     margin-bottom: 2rem;
     display: block;
