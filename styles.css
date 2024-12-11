@@ -246,7 +246,6 @@ p {
     flex-direction: column;
     gap: 2rem;
 }
-
 @media (min-width: 768px) {
     .company-content, .about-content {
         flex-direction: row;
@@ -282,7 +281,7 @@ p {
 }
 
 .domain {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color:hsl(253, 56%, 27%);
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
