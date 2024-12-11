@@ -10,6 +10,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.about-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
 a{
     color: var(--text-color);
 }
@@ -128,7 +133,7 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.icon-circle svg {
+.icon-circle img {
     width: 2.5rem;
     height: 2.5rem;
     color: var(--text-color);
