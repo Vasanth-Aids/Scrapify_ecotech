@@ -176,6 +176,17 @@ main {
     padding: 20px;
     border-radius: 20px 40px;
 }
+.company-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width:700px;
+    height: 520px;
+    background-color:hsl(253, 56%, 27%);
+    padding: 20px;
+    border-radius: 20px 40px;
+}
 
 .product-image img {
     width: 100%;
