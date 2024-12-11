@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #1e1344;
+    --primary-color: hsl(253, 56%, 17%);
     --secondary-color: #3498db;
     --text-color: #ffffff;
     --accent-color: #e74c3c;
@@ -164,6 +164,17 @@ main {
 
 .product-content, .product-image {
     flex: 1;
+}
+.product-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width:700px;
+    height: 400px;
+    background-color:hsl(253, 56%, 27%);
+    padding: 20px;
+    border-radius: 20px 40px;
 }
 
 .product-image img {
