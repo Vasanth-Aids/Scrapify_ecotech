@@ -30,7 +30,7 @@
     </nav>
 
     <main>
-      <section id="home" class="hero">
+      <section id="home" class="hero animate-section">
         <img src="1.svg" alt="" />
         <h1>
           <span class="hero-welcome">WELCOME TO</span>
@@ -69,7 +69,7 @@
       </section>
 
       <section id="products" class="products">
-        <div class="product">
+        <div class="product animate-section">
           <div class="product-content">
             <h2>Scrapify.ai</h2>
             <h3>Portal for Buyer and seller</h3>
@@ -88,7 +88,7 @@
           </div>
         </div>
 
-        <div class="product">
+        <div class="product animate-section">
           <div class="product-content">
             <h2>Ecofloater</h2>
             <h3>Revitalizing Waterbodies</h3>
@@ -107,10 +107,10 @@
         </div>
       </section>
 
-      <section id="company" class="company">
+      <section id="company" class="company animate-section">
         <div class="company-content">
-          <div class="company-image">
-            <img src="/images/scrapify-logo.jpg" alt="Scrapify Ecotech Logo" />
+          <div class="company-image ">
+            <img src="/images/scrapify-logo.jpg" alt="Scrapify Ecotech Logo" class="logo" />
           </div>
           <div class="company-info">
             <h2>Scrapify Ecotech Pvt. Ltd.</h2>
@@ -140,7 +140,7 @@
         </div>
       </section>
 
-      <section id="career" class="career">
+      <section id="career" class="career animate-section">
         <h2>INTERNSHIP & JOB RECRUITMENT</h2>
 
         <div class="career-domains">
@@ -192,7 +192,7 @@
         </button>
       </section>
 
-      <section id="about" class="about">
+      <section id="about" class="about animate-section">
         <div class="about-content">
           <div class="about-image">
             <img src="/images/azhagu.png" alt="Azhagu Pandia Raja M P" />
@@ -232,7 +232,7 @@
         </div>
       </section>
 
-      <section id="contact" class="contact">
+      <section id="contact" class="contact animate-section">
         <div class="contact-content">
           <div class="contact-header">
             <h2>WE'RE DESIGNING</h2>
@@ -291,6 +291,13 @@
         <p>&copy; 2023 Scrapify Ecotech Pvt. Ltd. All rights reserved.</p>
       </div>
     </footer>
+    <div id="scroll-popup" class="scroll-popup">
+      <h3>Welcome to Scrapify Ecotech!</h3>
+      <p>Discover our innovative eco-friendly solutions.</p>
+      <button id="close-popup" class="btn btn-primary">Close</button>
+    </div>
+
+    <script src="script.js"></script>
 
     <script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -302,5 +309,6 @@
         });
       });
     </script>
+
   </body>
 </html>
