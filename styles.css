@@ -389,3 +389,8 @@ p {
     max-width: 1200px;
     margin: 0 auto;
 }
+.about-links svg{
+    width: 2.5rem;
+    height: 2rem;
+    color: var(--text-color);
+}
