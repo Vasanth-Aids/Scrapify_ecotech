@@ -35,7 +35,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(30, 19, 68, 0.8);
+    background-color: hsl(253, 56%, 13%);
     backdrop-filter: blur(10px);
 }
 
@@ -192,7 +192,6 @@ main {
 .about,
 .contact {
     padding: 4rem 1rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -226,7 +225,24 @@ main {
 .product-image {
     flex: 0.65;
 }
-
+.products{
+    background-color: hsl(253, 56%, 37%);
+    padding: 190px;
+}
+.company{
+    padding: 120px;
+}
+.career{
+    background-color: hsl(253, 56%, 37%);
+    padding: 120px;
+}
+.about{
+    padding: 120px;
+}
+.contact{
+    background-color: hsl(253, 56%, 37%);
+    padding: 120px;
+}
 .product-content {
     display: flex;
     flex-direction: column;
