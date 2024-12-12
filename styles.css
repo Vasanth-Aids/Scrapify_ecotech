@@ -235,6 +235,11 @@ main {
     padding: 20px;
     border-radius: 20px 40px;
 }
+.product-content p{
+    font-family: Dm Sans;
+    font-size: 1.2rem;
+    font-weight:400;
+}
 
 .company-info {
     display: flex;
@@ -246,6 +251,12 @@ main {
     background-color: hsl(253, 56%, 27%);
     padding: 20px;
     border-radius: 20px 40px;
+}
+.company-info p{
+    font-family: Dm Sans;
+    font-size: 1.3rem;
+    font-weight:400;
+    font-style: bold;
 }
 
 .product-image img {
@@ -318,6 +329,11 @@ p {
 .company-image,
 .about-image {
     flex: 1;
+}
+.about-info{
+    font-family: dm sans;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .company-info,
