@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrapify.ai - Scrapify Ecotech Pvt. Ltd.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h2 {
+        text-align: center;
+      }
+      .feature-list {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        font-size: large;
+      }
+      .feature-list li {
+        margin-bottom: 0.5rem;
+      }
+      .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      body,
+      .navbar-container,
+      .product-content {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#products" class="nav-link">Products</a>
+        <a href="index.html#company" class="nav-link">Company</a>
+        <a href="index.html#career" class="nav-link">Career</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#contact" class="nav-link">Contact us</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="products">
+        <div class="product">
+          <div class="product-content">
+            <h2>Waste Management</h2>
+            <h3>Digital Solution for Waste Management</h3>
+            <p>
+              Scrapify stands as a pioneering force in the realm of waste
+              management, championing environmental stewardship through an
+              innovative web application. This digital platform serves as a
+              vital link between waste generators and waste collectors,
+              streamlining the process of waste disposal while promoting
+              sustainability.
+            </p>
+          </div>
+          <div class="product-image">
+            <img
+              src="placeholder.svg"
+              alt="Scrapify.ai Mobile App Interface"
+              class="app-screenshot"
+            />
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-content">
+            <h2>Waste segregation</h2>
+            <p>
+              At the heart of Scrapify's operations lies its user-friendly
+              interface, which empowers waste generators to effectively post
+              their waste materials. Through the platform, they can meticulously
+              segregate their waste into various categories, ensuring efficient
+              and systematic waste disposal. Moreover, the inclusion of
+              location-based features allows waste generators to pinpoint the
+              exact geographical coordinates of their waste disposal sites,
+              enhancing convenience and precision.
+            </p>
+          </div>
+          <div class="product-image">
+            <img
+              src="placeholder.svg"
+              alt="Waste Segregation Interface"
+              class="app-screenshot"
+            />
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-content">
+            <h2>Other sellers</h2>
+            <p>
+              On the flip side, waste collectors benefit immensely from
+              Scrapify's comprehensive database of waste generation sites. Armed
+              with real-time information about available waste and its location,
+              collectors can optimize their collection routes more effectively,
+              minimizing time and resources. The platform's transparent bidding
+              system enables collectors to submit competitive offers directly
+              within the application, fostering a fair and dynamic marketplace.
+            </p>
+          </div>
+          <div class="product-image">
+            <img
+              src="placeholder.svg"
+              alt="Scrapify Seller Interface"
+              class="app-screenshot"
+            />
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-content">
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+              <li>Real-time waste tracking and management</li>
+              <li>Location-based waste collection coordination</li>
+              <li>Transparent bidding system</li>
+              <li>Efficient route optimization</li>
+              <li>Comprehensive waste categorization</li>
+              <li>User-friendly mobile interface</li>
+            </ul>
+            <div class="button-group">
+              <a href="#" class="btn btn-primary">Download App</a>
+              <a href="#" class="btn btn-outline">Register Now</a>
+            </div>
+          </div>
+          <div class="product-image">
+            <img
+              src="placeholder.svg"
+              alt="Scrapify App Features"
+              class="app-screenshot"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2023 Scrapify Ecotech Pvt. Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
