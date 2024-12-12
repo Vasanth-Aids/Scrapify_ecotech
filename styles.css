@@ -330,6 +330,10 @@ p {
 .about-image {
     flex: 1;
 }
+.company-image img{
+    width: 60%;
+    height: auto;
+}
 .about-info{
     font-family: "DM Sans", sans-serif;
     font-size: 1.2rem;
