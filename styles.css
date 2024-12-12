@@ -48,10 +48,50 @@ body {
     text-decoration: none;
     margin-left: 2rem;
     transition: color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.3s ease;
+}
+
+.nav-link:active::before {
+    left: 100%;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-link:hover {
     color: var(--secondary-color);
+}
+.nav-link-active {
+    color: var(--secondary-color);
+}
+
+.nav-link-active::after {
+    transform: scaleX(1);
 }
 
 main {
@@ -396,9 +436,7 @@ p {
     height: 2rem;
     color: var(--text-color);
 }
-/* Existing styles */
 
-/* Add these new styles at the end of your CSS file */
 .scroll-popup {
   display: none;
   position: fixed;
@@ -433,9 +471,7 @@ p {
   border: none;
   cursor: pointer;
 }
-/* Existing styles */
 
-/* Add these new styles at the end of your CSS file */
 .animate-section {
   opacity: 0;
   transform: translateY(50px);
@@ -447,37 +483,3 @@ p {
   transform: translateY(0);
 }
 
-.scroll-popup {
-  display: none;
-  position: fixed;
-  bottom: -100%;
-  right: 20px;
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  max-width: 300px;
-  transition: bottom 0.5s ease-in-out;
-}
-
-.scroll-popup.show {
-  bottom: 20px;
-}
-
-.scroll-popup h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.scroll-popup p {
-  margin-bottom: 15px;
-}
-
-.scroll-popup .btn {
-  display: inline-block;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
-}

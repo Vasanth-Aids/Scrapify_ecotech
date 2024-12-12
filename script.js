@@ -50,4 +50,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Remove active class from all links
+      navLinks.forEach((l) => l.classList.remove("nav-link-active"));
+
+      // Add active class to clicked link
+      this.classList.add("nav-link-active");
+
+      // Smooth scroll to the target section
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+  });
 });
