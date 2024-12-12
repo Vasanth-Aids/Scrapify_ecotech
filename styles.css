@@ -235,10 +235,11 @@ main {
     padding: 20px;
     border-radius: 20px 40px;
 }
-.product-content p{
+
+.product-content p {
     font-family: "DM Sans", sans-serif;
     font-size: 1.4rem;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .company-info {
@@ -252,10 +253,11 @@ main {
     padding: 20px;
     border-radius: 20px 40px;
 }
-.company-info p{
+
+.company-info p {
     font-family: "DM Sans", sans-serif;
     font-size: 1.4rem;
-    font-weight:400;
+    font-weight: 400;
     font-style: bold;
 }
 
@@ -330,11 +332,13 @@ p {
 .about-image {
     flex: 1;
 }
-.company-image img{
+
+.company-image img {
     width: 60%;
     height: auto;
 }
-.about-info{
+
+.about-info {
     font-family: "DM Sans", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -433,6 +437,7 @@ p {
 .btn-large {
     font-size: 1.2rem;
     padding: 1rem 2rem;
+    border-radius: 10px 10px;
 }
 
 .about-links {
@@ -561,4 +566,22 @@ p {
 .animate-section.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.apply-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.career .btn-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.career .btn-large .icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
