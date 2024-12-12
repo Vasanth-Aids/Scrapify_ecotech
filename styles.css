@@ -236,7 +236,7 @@ main {
     border-radius: 20px 40px;
 }
 .product-content p{
-    font-family: Dm Sans;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.2rem;
     font-weight:400;
 }
@@ -253,7 +253,7 @@ main {
     border-radius: 20px 40px;
 }
 .company-info p{
-    font-family: Dm Sans;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.3rem;
     font-weight:400;
     font-style: bold;
@@ -331,7 +331,7 @@ p {
     flex: 1;
 }
 .about-info{
-    font-family: Dm Sans;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
 }
