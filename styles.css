@@ -219,9 +219,11 @@ main {
     }
 }
 
-.product-content,
-.product-image {
+.product-content{
     flex: 1;
+}
+.product-image {
+    flex: 0.65;
 }
 
 .product-content {
