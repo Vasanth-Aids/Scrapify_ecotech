@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecofloater - Scrapify Ecotech Pvt. Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#products" class="nav-link">Products</a>
+            <a href="index.html#company" class="nav-link">Company</a>
+            <a href="index.html#career" class="nav-link">Career</a>
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#contact" class="nav-link">Contact us</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <div class="product-content">
+                    <h2>Ecofloater</h2>
+                    <h3>Revitalizing Waterbodies</h3>
+                    <p>
+                        The Ecofloater is a revolutionary autonomous water drone designed to clean and maintain water bodies. This innovative device helps reduce floating waste like plastic debris and oil spills, while monitoring water quality parameters.
+                    </p>
+                </div>
+                <div class="product-image">
+                    <img src="/images/ecofloater.jpg" alt="Ecofloater Prototype" class="prototype-image">
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-content">
+                    <h2>Water Quality</h2>
+                    <p>
+                        Equipped with advanced technology, the Ecofloater measures water quality by monitoring various parameters. It tracks the presence of algae, provides real-time data, and helps maintain optimal water composition. This makes it an invaluable tool for water management teams, working with local authorities to maintain healthy aquatic ecosystems.
+                    </p>
+                </div>
+                <div class="product-image">
+                    <img src="/images/ecofloater2.jpg" alt="Ecofloater Water Quality Testing" class="prototype-image">
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-content">
+                    <h2>Oil Skimming</h2>
+                    <p>
+                        One of its standout features is its capability to address oil spills. The Ecofloater is equipped with specialized oil skimming and filtration modules, which ensures efficient removal of oil from water bodies. This feature proves crucial in emergency situations, helping in safeguarding marine life, and maintaining the purity of water bodies.
+                    </p>
+                </div>
+                <div class="product-image">
+                    <img src="/images/ecofloater3.jpg" alt="Ecofloater Oil Skimming Feature" class="prototype-image">
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-content">
+                    <h2>Smart Monitoring</h2>
+                    <p>
+                        Moreover, the Ecofloater is designed and developed in-house to ensure optimal performance. Its smart system allows for real-time monitoring and control, enabling operators to configure the device remotely. By combining advanced sensors with innovative mechanical systems, making the Ecofloater adaptable to a wide range of tasks, from routine maintenance to emergency response situations. This integration of technology and environmental science offers a comprehensive solution for water body restoration.
+                    </p>
+                </div>
+                <div class="product-image">
+                    <img src="/images/ecofloater4.jpg" alt="Ecofloater in Operation" class="testing-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Scrapify Ecotech Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
