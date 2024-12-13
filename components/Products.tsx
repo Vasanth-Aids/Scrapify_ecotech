@@ -8,10 +8,14 @@ const Products = () => {
       <div className="container">
         <h2 className={styles.sectionTitle}>Our Products</h2>
         <div className={styles.productGrid}>
-
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/images/ecofloater.jpg" alt="Ecofloater Device" width={500} height={300} />
+              <Image
+                src="/images/ecofloater.jpg"
+                alt="Ecofloater Device"
+                width={500}
+                height={300}
+              />
             </div>
             <div className={styles.productContent}>
               <h3>Ecofloater</h3>
@@ -28,10 +32,58 @@ const Products = () => {
               </Link>
             </div>
           </div>
-        </div> 
+          <div className={styles.product}>
+            <div className={styles.productImage}>
+              <Image
+                src="/images/ecofloater2.jpg"
+                alt="Ecofloater Device"
+                width={500}
+                height={300}
+              />
+            </div>
+            <div className={styles.productContent}>
+              <h3>Algae Detector</h3>
+              <p>Revitalizing Waterbodies</p>
+              <p>
+                Introducing "Ecofloater" – the latest in water conservation
+                technology! This autonomous water drone is designed to clean up
+                our water bodies by removing trash, reducing algal blooms, and
+                clearing oil spills. Join us in protecting our environment with
+                Ecofloater!
+              </p>
+              <Link href="/ecofloater" className="btn btn-primary">
+                Learn more
+              </Link>
+            </div>
+          </div>
+          <div className={styles.product}>
+            <div className={styles.productImage}>
+              <Image
+                src="/images/ecofloater3.jpg"
+                alt="Ecofloater Device"
+                width={500}
+                height={300}
+              />
+            </div>
+            <div className={styles.productContent}>
+              <h3>Oil Spill collector</h3>
+              <p>Revitalizing Waterbodies</p>
+              <p>
+                Introducing "Ecofloater" – the latest in water conservation
+                technology! This autonomous water drone is designed to clean up
+                our water bodies by removing trash, reducing algal blooms, and
+                clearing oil spills. Join us in protecting our environment with
+                Ecofloater!
+              </p>
+              <Link href="/ecofloater" className="btn btn-primary">
+                Learn more
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Products
