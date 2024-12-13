@@ -17,8 +17,8 @@ export default function Scrapify() {
         </section>
 
         <section className={styles.content}>
-          <div className={styles.imageContainer}>
-            <Image src="/images/scrapify-ai1.jpg" alt="Scrapify.ai Interface" width={600} height={400} className={styles.image} />
+          <div className={styles.imageContainer} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Image src="/images/scrapify-ai1.jpg" alt="Scrapify.ai Interface" width={300} height={500} className={styles.image} />
           </div>
           <div className={styles.textContent}>
             <h2>About Scrapify.ai</h2>
