@@ -20,6 +20,8 @@ export default function Contact() {
     enquiry: ''
   })
 
+  const [result, setResult] = useState("")
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
@@ -64,19 +66,32 @@ export default function Contact() {
     return isValid
   }
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    if (validateForm()) {
-      // Here you would typically send the form data to your server
-      console.log('Form submitted:', formData)
-      // Reset form after submission
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        enquiry: ''
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    if (!validateForm()) return
+
+    setResult("Sending....")
+    const formData = new FormData(event.target as HTMLFormElement)
+    formData.append("access_key", "d21aeba5-8148-47d9-99d3-7c6f8bcbd72d");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
       })
-      alert('Message sent successfully!')
+
+      const data = await response.json()
+
+      if (data.success) {
+        setResult("Form Submitted Successfully")
+        setFormData({ name: '', email: '', subject: '', enquiry: '' })
+      } else {
+        console.log("Error", data)
+        setResult(data.message)
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setResult('An error occurred while submitting the form.')
     }
   }
 
@@ -135,6 +150,7 @@ export default function Contact() {
               {errors.enquiry && <span className={styles.error}>{errors.enquiry}</span>}
             </div>
             <button type="submit" className="btn btn-primary">Send Message</button>
+            {result && <p>{result}</p>}
           </form>
         </section>
       </main>
