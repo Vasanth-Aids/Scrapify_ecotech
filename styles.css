@@ -193,6 +193,7 @@ main {
 .contact {
     padding: 4rem 1rem;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .product {
@@ -219,59 +220,39 @@ main {
     }
 }
 
-.product-content{
+.product-content {
     flex: 1;
 }
+
 .product-image {
     flex: 0.65;
 }
-.products{
-    background-color: #060940;
-    padding: 190px;
-}
-.company{
-    padding: 120px;
-    padding-top: 120px;
-}
-.career{
-    background-color: #060940;
-    padding: 210px;
-}
-.about{
-    padding: 120px;
-}
-.contact{
-    background-color: #060940;
-    padding: 210px;
-}
-.product-content {
+
+.product-content,
+.company-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    width: 700px;
-    height: 520px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    min-height: 520px;
     background-color: hsl(253, 56%, 27%);
     padding: 20px;
     border-radius: 20px 40px;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-content p {
     font-family: "DM Sans", sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
-}
-
-.company-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    width: 700px;
-    height: 600px;
-    background-color: hsl(253, 56%, 27%);
-    padding: 20px;
-    border-radius: 20px 40px;
 }
 
 .company-info p {
@@ -603,4 +584,210 @@ p {
 .career .btn-large .icon {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+
+    .products,
+    .company,
+    .career,
+    .about,
+    .contact {
+        padding: 3rem 1rem;
+    }
+
+    .product-content,
+    .company-info {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .hero-welcome {
+        font-size: 2rem;
+    }
+
+    .hero-company {
+        font-size: 2.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+
+    .product,
+    .company-content,
+    .about-content {
+        flex-direction: column;
+    }
+
+    .product-image,
+    .company-image,
+    .about-image {
+        margin-top: 2rem;
+    }
+
+    .career-domains {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-welcome {
+        font-size: 1.5rem;
+    }
+
+    .hero-company {
+        font-size: 2rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .product-content p,
+    .company-info p {
+        font-size: 1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make forms responsive */
+.contact-form,
+.application-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Adjust phone container for smaller screens */
+@media screen and (max-width: 480px) {
+    .phone-container {
+        width: 80%;
+        height: auto;
+        aspect-ratio: 1 / 2;
+    }
+}
+
+@media (max-width: 1200px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .product-content,
+    .product-image {
+        width: 100%;
+    }
+
+    .product-content {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .phone-container {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .products {
+        padding: 2rem;
+    }
+
+    .product-content {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .product-content h2 {
+        font-size: 2rem;
+    }
+
+    .product-content p {
+        font-size: 1rem;
+    }
+
+    .phone-container {
+        width: 200px;
+        height: 400px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group .btn {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-content p {
+        font-size: 0.9rem;
+    }
+
+    .phone-container {
+        width: 150px;
+        height: 300px;
+    }
 }
