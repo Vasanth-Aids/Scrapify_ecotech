@@ -10,6 +10,7 @@ import Career from '../components/Career'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import ScrollPopup from '../components/ScrollPopup'
+import Products2 from '@/components/products2'
 
 export default function Home() {
   useEffect(() => {
@@ -35,6 +36,7 @@ export default function Home() {
         <Hero />
         <Products />
         <Company />
+        <Products2 />
         <Career />
         <About />
         <Contact />
