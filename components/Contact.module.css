@@ -1,0 +1,84 @@
+.contact {
+  background-color: var(--background-color);
+}
+
+.contactContent {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contactHeader h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.contactHeader h3 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactDetails {
+  margin-top: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.socialLink:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.socialLink svg {
+  width: 24px;
+  height: 24px;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .contactHeader h2 {
+    font-size: 2rem;
+  }
+
+  .contactHeader h3 {
+    font-size: 1.5rem;
+  }
+}
+

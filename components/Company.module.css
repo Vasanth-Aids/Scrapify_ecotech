@@ -1,0 +1,69 @@
+.company {
+  background-color: var(--primary-color);
+}
+
+.companyContent {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.companyImage {
+  flex: 1;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.companyInfo {
+  flex: 2;
+}
+
+.companyInfo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.companyInfo p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.companyLocation {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.companyLocation a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .companyContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .companyImage {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+}
+

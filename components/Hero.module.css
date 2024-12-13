@@ -1,0 +1,139 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--background-color));
+  overflow: hidden;
+  position: relative;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.heroImage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 1s ease, transform 1s ease;
+}
+
+.hero.animate .heroContent {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero.animate .heroImage {
+  left: 75%;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.heroWelcome {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.heroCompany {
+  display: block;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroTagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.heroIcons {
+  display: flex;
+  gap: 2rem;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.iconItem:hover .iconCircle {
+  transform: scale(1.1);
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroContent {
+    margin-bottom: 2rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroIcons {
+    justify-content: center;
+  }
+
+  .heroImage {
+    position: static;
+    transform: none;
+    margin-top: 2rem;
+  }
+
+  .hero.animate .heroImage {
+    left: 50%;
+  }
+}
+

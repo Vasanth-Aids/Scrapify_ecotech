@@ -1,0 +1,33 @@
+.scrollPopup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scrollPopup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scrollPopup h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.scrollPopup p {
+  margin-bottom: 1rem;
+}
+
+.scrollPopup button {
+  width: 100%;
+}
+
