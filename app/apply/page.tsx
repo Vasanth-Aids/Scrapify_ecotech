@@ -167,6 +167,7 @@ export default function Apply() {
                 type="file"
                 id="resume"
                 name="resume"
+                className="btn btn-primary"
                 onChange={handleFileChange}
                 required
               />
