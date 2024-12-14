@@ -48,6 +48,10 @@
         font-size: 0.9rem;
         margin-top: 0.25rem;
       }
+      .contact-form .btn {
+        display: block;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
@@ -98,7 +102,7 @@
             <input
               type="hidden"
               name="access_key"
-              value="d21aeba5-8148-47d9-99d3-7c6f8bcbd72d"
+              value="e11c275a-7dec-4328-8ec7-8f529d35a6df"
             />
             <input
               type="hidden"
@@ -115,7 +119,7 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2023 Scrapify Ecotech Pvt. Ltd. All rights reserved.</p>
+        <p>&copy; 2024 Scrapify Ecotech Pvt. Ltd. All rights reserved.</p>
       </div>
     </footer>
     <script>
@@ -176,7 +180,7 @@
             fetch(this.action, {
               method: "POST",
               headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "contact/json"
               },
               body: JSON.stringify(formData)
             })
