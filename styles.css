@@ -323,9 +323,7 @@ p {
   color: var(--text-color);
 }
 
-.bot {
-  width: 25%;
-}
+
 
 .btn-outline {
   background-color: transparent;
