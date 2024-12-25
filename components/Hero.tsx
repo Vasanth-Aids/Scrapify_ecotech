@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
           <div className={styles.iconItem}>
             <div className={styles.iconCircle}>
-              <Image src="/images/innovate.svg" alt="" width={40} height={40} />
+              <Image src={"/images/innovate.svg"} alt="" width={40} height={40} />
             </div>
             <span>INNOVATE</span>
           </div>
@@ -47,15 +47,15 @@ const Hero = () => {
       </div>
       <div className={styles.heroImage}>
         <Image
-          src="/images/scrapify-logo.jpg"
+          src={"/images/scrapify-logo.jpg"}
           alt="Scrapify Logo"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           className={styles.logo}
         />
       </div>
     </section>
-  )
+  );
 }
 
 export default Hero

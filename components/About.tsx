@@ -37,7 +37,7 @@ const About = () => {
                 </svg>
               </a>
               <a
-                href="mailto:azhagu@scrapify.ai"
+                href="mailto:ceo@scrapifyecotech.in"
                 className="btn btn-outline"
               >
                 <svg viewBox="0 0 24 24" className={styles.icon}>

@@ -42,14 +42,14 @@ const Company = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                iTNT Hub, Chennai
+                <button className='btn btn-outline'> iTNT Hub, Chennai</button>
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Company

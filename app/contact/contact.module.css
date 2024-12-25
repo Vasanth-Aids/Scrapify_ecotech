@@ -59,7 +59,7 @@
   margin-top: 0.25rem;
 }
 
-button[type="submit"] {
+button[type="submit"].submitButton {
   margin-top: 1rem;
 }
 

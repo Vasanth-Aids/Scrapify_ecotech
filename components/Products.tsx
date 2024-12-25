@@ -10,30 +10,12 @@ const Products = () => {
         <div className={styles.productGrid}>
           <div className={styles.product}>
             <div className={styles.productImage}>
-              <Image src="/images/1.png" alt="Scrapify.ai Portal Interface" width={500} height={300} />
-            </div>
-            <div className={styles.productContent}>
-              <h3>Scrapify.ai</h3>
-              <p>Portal for Buyer and Seller</p>
-              <p>
-                This web portal connects waste generators and collectors. Users
-                can post and buy sorted waste, promoting efficient and
-                eco-friendly waste management.
-              </p>
-              <div className={styles.buttonGroup}>
-                <Link href="/scrapify" className="btn btn-primary">
-                  Learn more
-                </Link>
-                <a href="https://scrapify.ai/home/seller" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                  Register now!
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.product}>
-            <div className={styles.productImage}>
-              <Image src="/images/ecofloater.jpg" alt="Ecofloater Device" width={500} height={300} />
+              <Image
+                src="/images/ecofloater.jpg"
+                alt="Ecofloater Device"
+                width={500}
+                height={300}
+              />
             </div>
             <div className={styles.productContent}>
               <h3>Ecofloater</h3>
@@ -50,10 +32,58 @@ const Products = () => {
               </Link>
             </div>
           </div>
+          <div className={styles.product}>
+            <div className={styles.productImage}>
+              <Image
+                src="/images/ecofloater2.jpg"
+                alt="Ecofloater Device"
+                width={500}
+                height={300}
+              />
+            </div>
+            <div className={styles.productContent}>
+              <h3>Algae Detector</h3>
+              <p>Revitalizing Waterbodies</p>
+              <p>
+                Introducing "Ecofloater" – the latest in water conservation
+                technology! This autonomous water drone is designed to clean up
+                our water bodies by removing trash, reducing algal blooms, and
+                clearing oil spills. Join us in protecting our environment with
+                Ecofloater!
+              </p>
+              <Link href="/ecofloater" className="btn btn-primary">
+                Learn more
+              </Link>
+            </div>
+          </div>
+          <div className={styles.product}>
+            <div className={styles.productImage}>
+              <Image
+                src="/images/ecofloater3.jpg"
+                alt="Ecofloater Device"
+                width={500}
+                height={300}
+              />
+            </div>
+            <div className={styles.productContent}>
+              <h3>Oil Spill collector</h3>
+              <p>Revitalizing Waterbodies</p>
+              <p>
+                Introducing "Ecofloater" – the latest in water conservation
+                technology! This autonomous water drone is designed to clean up
+                our water bodies by removing trash, reducing algal blooms, and
+                clearing oil spills. Join us in protecting our environment with
+                Ecofloater!
+              </p>
+              <Link href="/ecofloater" className="btn btn-primary">
+                Learn more
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Products
